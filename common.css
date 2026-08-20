@@ -1,0 +1,17 @@
+/* COMMON WEBSITE SETTINGS - edit shared styles here */
+:root{--primary:#4dbb3d;--accent:#f5d21b;--bg:#020504;--text:#f7faf8}
+.site-common-header,.site-common-footer{font-family:Inter,Segoe UI,Arial,sans-serif}
+.site-common-header{position:sticky;top:0;z-index:999;background:#020504ee;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff20}
+.common-nav{max-width:1320px;width:92%;margin:auto;height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.common-brand{font-weight:1000;letter-spacing:1px;color:#fff;text-decoration:none}.common-brand span{color:var(--accent)}
+.common-links{display:flex;gap:18px;flex-wrap:wrap}.common-links a{color:#c7d2cb;text-decoration:none;font-size:12px;font-weight:800}
+.common-links a:hover{color:var(--accent)}
+.site-common-footer{padding:42px 5%;background:#010201;color:#aab8b0;border-top:1px solid #ffffff18;text-align:center}
+.common-contact{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:16px 0}
+.common-contact a{color:#fff;text-decoration:none;border:1px solid #ffffff25;padding:10px 14px;border-radius:10px}
+.common-contact a:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:650px){.common-links{display:none}.common-nav{height:60px}}
+
+/* Clickable contact links */
+a[href^="https://wa.me/"],a[href^="mailto:"]{transition:.2s ease}
+a[href^="https://wa.me/"]:hover,a[href^="mailto:"]:hover{opacity:.82}
